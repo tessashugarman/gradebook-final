@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="app.js"></script>
+</head>
+<body>
+
+    <div class="login">
+        <input id="username" placeholder="Username">
+        <input id="password" placeholder="Password" type="password">
+        <input type="button" value="Login" onclick="login()">
+        <span id="incorrect"></span>
+    </div>
+
+    <div class="menu">
+        <input type="button" id="grade-book" value="Grade View" onclick="gradeBook()">
+        <input type="button" id="submit-grades" value="Add Grade" onclick="submitGradebook()">
+    </div>
+
+    <div class="grade-book"></div>
+
+    <div id="grades">
+        <h3>Grades</h3>
+    </div>
+
+    <div class="submit-grades">
+        <input id="name" placeholder="Student Name" type="string">
+        <input id="grade" placeholder="Student Grade (0-100)">
+        <input type="button" id="submit" value="Submit Grade" onclick="submitGrades()">
+        <span id="incorrect-grade"></span>
+    </div>
+
+<style>
+    .menu {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: darkblue;
+        visibility: hidden;
+    }
+    .submit-grades, .grade-book, #grades {
+        visibility: hidden;
+    }
+</style>
+
+</body>
+</html>
